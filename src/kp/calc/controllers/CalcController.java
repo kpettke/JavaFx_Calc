@@ -38,14 +38,15 @@ public class CalcController {
             case "*":
             case "/":
                 insertOperator(buttonText);
-                operationType = "div";
+
                 break;
             case "Clear":
                 clear();
                 break;
             case "del":
             case "=":
-
+                double result = changeString.evaluate(this.getCalculations().getText());
+                setResult(String.valueOf(result));
 
 
         }
@@ -67,6 +68,18 @@ public class CalcController {
     public void clear ()
     {
         calculations.setText(" ");
+    }
+
+    public Label getCalculations(){
+    return calculations ;
+    }
+
+    public Label getResult(){
+        return result;
+    }
+
+    public void setResult(String newResult){
+        this.result.setText("=" + newResult);
     }
 
 

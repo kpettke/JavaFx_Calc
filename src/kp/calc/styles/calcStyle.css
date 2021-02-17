@@ -12,3 +12,8 @@
     -fx-font-size: 18;
     -fx-font-weight: bold;
 }
+
+.result{
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+}
