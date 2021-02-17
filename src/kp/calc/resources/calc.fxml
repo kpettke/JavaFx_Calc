@@ -21,25 +21,25 @@
         </rowConstraints>
          <children>
             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="1" GridPane.rowIndex="1" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="65.0" prefWidth="70.0" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="2" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="3" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="4" GridPane.rowIndex="2" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="7" GridPane.rowIndex="3" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="8" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" prefHeight="65.0" prefWidth="70.0" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="2" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="3" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="4" GridPane.rowIndex="2" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="7" GridPane.rowIndex="3" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="8" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3" />
             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@../styles/calcStyle.css" GridPane.rowIndex="4" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@../styles/calcStyle.css" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="operator_btn" text="/" GridPane.columnIndex="3" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="operator_btn" text="Del" textFill="#ee0707" GridPane.columnIndex="2" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="operator_btn" text="Clear" textFill="#ee0303" GridPane.columnIndex="1" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="operator_btn" stylesheets="@../styles/calcStyle.css" text="History" textFill="RED" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="operator_btn" text="/" GridPane.columnIndex="3" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="operator_btn" text="Del" textFill="#ee0707" GridPane.columnIndex="2" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="operator_btn" text="Clear" textFill="#ee0303" GridPane.columnIndex="1" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="operator_btn" stylesheets="@../styles/calcStyle.css" text="History" textFill="RED" />
          </children>
       </GridPane>
    </center>
@@ -48,8 +48,8 @@
          <content>
             <AnchorPane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Label fx:id="calculations" layoutX="79.0" layoutY="47.0" prefHeight="17.0" prefWidth="120.0" text="Label" />
-                  <Label layoutX="184.0" layoutY="74.0" prefHeight="17.0" prefWidth="30.0" text="=" />
+                  <Label fx:id="calculations" alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="42.0" prefHeight="27.0" prefWidth="235.0" stylesheets="@../styles/calcStyle.css" textAlignment="CENTER" wrapText="true" />
+                  <Label fx:id="result" layoutX="184.0" layoutY="74.0" prefHeight="17.0" prefWidth="30.0" text="=" />
                </children>
             </AnchorPane>
          </content></TitledPane>
