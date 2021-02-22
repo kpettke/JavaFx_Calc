@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
@@ -31,7 +32,11 @@
             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="9" GridPane.columnIndex="2" GridPane.rowIndex="3" />
             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@../styles/calcStyle.css" GridPane.rowIndex="4" />
             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" stylesheets="@../styles/calcStyle.css" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" stylesheets="@../styles/calcStyle.css" text="ANS" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <styleClass>
+                  <String fx:value="operator_btn" />
+                  <String fx:value="number_btn" />
+               </styleClass></Button>
             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" />
             <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" styleClass="number_btn" stylesheets="@../styles/calcStyle.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />

@@ -1,9 +1,16 @@
 package kp.calc.controllers;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import kp.calc.Main;
+
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class CalcController {
 
@@ -12,6 +19,9 @@ public class CalcController {
 
     @FXML
     private Label result;
+
+    private ArrayList<String> calculationHistory = new ArrayList();
+
 
     String operationType;
 
@@ -38,16 +48,29 @@ public class CalcController {
             case "*":
             case "/":
                 insertOperator(buttonText);
-
                 break;
             case "Clear":
                 clear();
                 break;
             case "del":
-            case "=":
-                double result = changeString.evaluate(this.getCalculations().getText());
-                setResult(String.valueOf(result));
 
+            case "=":
+                int result = changeString.evaluate(this.getCalculations().getText());
+                setResult(String.valueOf(result));
+                addCalculation(this.getCalculations().getText(), String.valueOf(result));
+                break;
+
+            case "ANS":
+                insertAns(getResult().getText().substring(1));
+                break;
+
+            case "Del":
+                deleteLast();
+                break;
+
+            case "History":
+                openHistoryWindow();
+                break;
 
         }
 
@@ -65,13 +88,12 @@ public class CalcController {
         calculations.setText(calculations.getText() + " " + operator + " ");
     }
 
-    public void clear ()
-    {
+    public void clear () {
         calculations.setText(" ");
     }
 
     public Label getCalculations(){
-    return calculations ;
+        return calculations ;
     }
 
     public Label getResult(){
@@ -80,6 +102,41 @@ public class CalcController {
 
     public void setResult(String newResult){
         this.result.setText("=" + newResult);
+    }
+
+    public void insertAns(String ans){
+        calculations.setText(calculations.getText() + ans);
+    }
+
+    public void deleteLast(){
+        if (!getCalculations().getText().isEmpty()) {
+
+            StringBuilder text = new StringBuilder(getCalculations().getText());
+            text.deleteCharAt(text.length()-1);
+            getCalculations().setText(text.toString());
+
+        }
+    }
+
+    public void openHistoryWindow(){
+        try{
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/kp/calc/resources/history.fxml"));
+            Parent root = loader.load();
+
+            Main.getHistoryStage().setScene(new Scene(root));
+
+           HistoryController historyController = loader.getController();
+           historyController.initCalculations(calculationHistory);
+
+            Main.getHistoryStage().show();
+
+        }catch (IOException ex){
+            System.out.println(ex);
+        }
+    }
+
+    public void addCalculation(String calculation, String result){
+        this.calculationHistory.add(calculation + "=" + result);
     }
 
 
